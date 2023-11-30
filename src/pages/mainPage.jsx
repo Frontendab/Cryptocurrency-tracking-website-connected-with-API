@@ -1,5 +1,5 @@
 import React from "react";
-import { createHashRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import { PAGE } from "./PAGE";
 import { FeaturedRoutes } from "../components/ROUTES/featuredRoutes";
 import { EarnRoutes } from "../components/ROUTES/earnRoutes";
@@ -10,7 +10,7 @@ const MainPage = () => {
         <>
         <Router>
             <Routes>
-                <Route path="/" element={<PAGE />} />
+                <Route path="/" exact element={<PAGE />} />
                 <Route path="/featured" element={<FeaturedRoutes />} />
                 <Route path="/earn" element={<EarnRoutes />} />
             </Routes>
