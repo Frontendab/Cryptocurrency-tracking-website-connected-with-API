@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Cryptocurrency-tracking-website-connected-with-API/static/css/main.1b30eced.css",
+    "main.js": "/Cryptocurrency-tracking-website-connected-with-API/static/js/main.96572acf.js",
+    "static/media/trade.png": "/Cryptocurrency-tracking-website-connected-with-API/static/media/trade.a2c09083fbde76e9cac2.png",
+    "static/media/hero-img.png": "/Cryptocurrency-tracking-website-connected-with-API/static/media/hero-img.66b9eb77caa3ac6d4fe8.png",
+    "index.html": "/Cryptocurrency-tracking-website-connected-with-API/index.html",
+    "main.1b30eced.css.map": "/Cryptocurrency-tracking-website-connected-with-API/static/css/main.1b30eced.css.map",
+    "main.96572acf.js.map": "/Cryptocurrency-tracking-website-connected-with-API/static/js/main.96572acf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b30eced.css",
+    "static/js/main.96572acf.js"
+  ]
+}
