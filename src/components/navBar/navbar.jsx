@@ -30,7 +30,7 @@ export const NavBar = () => {
           <Link className="nav-link" to="/earn">Earn</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" onClick={handleClick}>Contact</a>
+          <Link className="nav-link" onClick={handleClick} style={{cursor: "pointer"}}>Contact</Link>
         </li>
           </ul>
         </div>
