@@ -1,0 +1,75 @@
+@import '../../CONTENT-SASS/mixin/mixin';
+.HOME{ 
+    position: relative;
+    @media #{$MAX_SM} {
+        height: 100vh;
+        }
+        @media #{$MIN_SM} {
+            height: 135vh;
+        }
+        @media #{$MIN-MD} {
+            height: 100vh;
+        }
+    .row{
+        @media #{$MAX_SM} {
+        transform: translateY(23%);
+        }
+        @media #{$MIN_SM} {
+            transform: translateY(20%);
+        }
+        @media #{$MIN-MD} {
+            transform: translateY(79%);
+        }
+        @media #{$MIN-LG} {
+            transform: translateY(60%);
+        }
+        .col-lg-6{
+            p{
+                color: #000;
+                @media #{$MIN-MD} {
+                    font-size: 16px;
+                }
+                @media #{$MAX_SM} {
+                    font-size: 14px;
+                }
+                font-size: 18px;
+            }
+            h1{
+                font-weight: bold;
+                margin: 10px 0;
+                line-height: 1.4;
+                @media #{$MAX_SM} {
+                    font-size: 34px;
+                    }
+                    @media #{$MIN_SM} {
+                        font-size: 65px;
+                    }
+                    @media #{$MIN-MD} {
+                        font-size: 42px;
+                    }
+                    @media #{$MIN-LG} {
+                        font-size: 51px;
+                    }
+            }
+            .btn-input{
+                @media #{$MAX_MD} {
+                    display: block !important;
+                    margin-top: 35px;
+                }
+            }
+            input{
+                @include styleInput;
+            }
+            button{
+                @include mainBtn;
+                font-size: 22px;
+                padding: 12px 30px !important;
+                margin: 0 22px;
+                @media #{$MAX_MD} {
+                    width: 100%;
+                    margin: 22px 0;
+                }
+            }
+        }
+    }
+}

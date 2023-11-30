@@ -1,0 +1,62 @@
+@import '../../CONTENT-SASS/mixin/mixin';
+nav{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background: $BG-NAVBAR;
+    border-bottom: 1px solid $COLOR-BORDER-BOTTOM;
+    .navbar-toggler{
+        font-size: 40px;
+        padding: 3px 10px;
+        svg{
+            display: flex;
+        }
+    }
+    h1{
+        .navbar-brand{
+            @include LOGO;
+        }
+    }
+    .container{
+        .navbar-collapse{
+            @media #{$MAX_MD}{
+                position: absolute;
+                right: 0;
+                width: 50%;
+                background: $BG-MENU;
+                top: 100%;  
+                height: calc(93vh - 1px) !important;
+                transform: translateX(100%);
+                transition: .3s;
+                z-index: 99999;
+                @media #{$MAX_SM} {
+                    width: 100%;  
+                } 
+            }
+        }
+        .show{
+            transform: translateX(0%);
+        }
+        .navbar-nav{
+            li{
+                margin: 0 15px;
+                a{
+                    font-weight: 600;
+                    @media #{$MAX_MD}{
+                        margin: 12px 15px;
+                    }
+                }
+            }
+        }
+        .btn{
+            @include mainBtn;
+            @media #{$MAX_SM} {
+                font-size: 16px !important;
+                padding-right: 20px !important;
+                padding-left: 20px !important;
+            }   
+        }
+    }
+}

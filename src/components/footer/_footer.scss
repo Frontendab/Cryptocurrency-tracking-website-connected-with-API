@@ -1,0 +1,52 @@
+@import '../../CONTENT-SASS/mixin/mixin';
+footer{
+    background: $BG-SECTION-CRYPTO;
+    .container{
+        h1{
+            margin: 0 !important;
+            padding-top: 30px;
+            .navbar-brand{
+                @include LOGO;
+            }
+        }
+        .row{
+            .col-lg-3{
+                h2{
+                    position: relative;
+                    margin: 30px 0;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        width: 60% !important;
+                        height: 5px;
+                        background: $GREEN;
+                        top: 140%;
+                        transform: translateY(-140%);
+                        border-radius: 10px;  
+                        @media #{$MAX_SM}{
+                            width: 40% !important;
+                        }                  
+                    }
+                }
+                p{
+                    margin: 20px 0;
+                }
+            }
+            .Social{
+                a{
+                    display: flex;
+                    font-size: 25px;
+                }
+            }
+        }
+        .copy_right{
+            color: black;
+            text-align: center;
+            padding-bottom: 15px;
+            margin: 0;
+            span{
+                color: $GREEN;
+            }
+        }
+    }
+}

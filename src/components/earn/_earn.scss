@@ -1,0 +1,52 @@
+@import '../../CONTENT-SASS/mixin/mixin';
+.Earn{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    @media #{$MAX_MD}{
+        height: 170vh;
+    }
+    .row{
+        width: 100%;
+        .first{
+            @media #{$MAX_MD}{
+                text-align: center;
+            }
+            img{
+                width: 60%;
+                cursor: pointer;
+                transition: transform .6s;
+            }
+            img:hover{
+                transform: scale(1.1) !important;
+            }
+        }
+        .second{
+            .content{
+                transform: translateY(45%);
+                p{
+                    margin: 25px 0;
+                }
+                .btn-input{
+                    @media #{$MAX_MD} {
+                        display: block !important;
+                        margin-top: 35px;
+                    }
+                }
+                input{
+                    @include styleInput;
+                }
+                button{
+                    @include mainBtn;
+                    font-size: 22px;
+                    padding: 12px 30px !important;
+                    margin: 0 22px;
+                    @media #{$MAX_MD} {
+                        width: 100%;
+                        margin: 22px 0;
+                    }
+                }
+            }
+        }
+    }
+}

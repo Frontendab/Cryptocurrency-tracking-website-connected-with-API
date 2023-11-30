@@ -1,0 +1,97 @@
+@import '../../CONTENT-SASS/mixin/mixin';
+.crypto{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    @media #{$MAX-SM}{
+        height: 160vh;
+    }
+    @media #{$MIN-MD}{
+        height: 100vh;
+    }
+    .bg-style{
+        position: absolute;
+        width: 110%;
+        top: 5%;
+        height: 95%;
+        background: $BG-SECTION-CRYPTO;
+        z-index: -1;
+        transform: rotate(1deg);
+        left: -20px;    
+    }
+    .container{
+        position: relative;
+        top: 40%;
+        transform: translateY(-40%);
+        @media #{$MIN-LG}{
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .row{
+            .first{
+                h1{
+                    font-weight: bold;
+                    font-size: 45px;
+                    line-height: 1.4;
+                    margin: 0;
+                    @media #{$MAX-SM}{
+                        font-size: 44px !important;
+                    }
+                    @media #{$MIN-MD}{
+                        font-size: 36px !important;
+                    }
+                    @media #{$MIN-LG}{
+                        font-size: 43px !important;
+                    }
+                }
+                p{
+                    color: black;
+                    margin: 18px 0;
+                    font-size: 18px;
+                }
+                button{
+                    @include mainBtn;
+                }
+            }
+            .second{
+                .boxs{
+                    display: grid;
+                    grid-gap: 30px;
+                    grid-template-columns: repeat(3,1fr);
+                    @media #{$MAX-SM}{
+                        grid-template-columns: repeat(2,1fr);
+                    }
+                    @media #{$MIN-MD}{
+                        grid-template-columns: repeat(2,1fr);
+                    }
+                    @media #{$MIN-LG}{
+                        grid-template-columns: repeat(3,1fr);
+                    }
+                    .box{
+                        text-align: center;
+                        background: #fff;
+                        padding: 10px;
+                        border-radius: 15px !important;
+                        transition: all .4s ease;
+                        cursor: pointer;
+                        &:hover{
+                            box-shadow: 0px 0px #fff !important;
+                        }
+                        p{
+                            margin: 2px 0;
+                        }
+                        img{
+                            width: 105px;
+                        }
+                        .price_change_percenter_green{
+                            color: $GREEN;
+                        }
+                        .price_change_percenter_red{
+                            color: $RED;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
