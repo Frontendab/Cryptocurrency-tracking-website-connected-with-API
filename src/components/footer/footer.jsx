@@ -3,11 +3,15 @@ import { MdFacebook } from 'react-icons/md';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 import { LiaLinkedinIn } from 'react-icons/lia';
 import { BsGithub } from 'react-icons/bs';
+import { ProviderContext } from "../../App";
+import { useContext } from "react";
 
 export const Footer = () => {
+    const {ref} = useContext(ProviderContext); 
+
     return (
         <>
-        <footer id="footer" className="container-fluid">
+        <footer id="contact" ref={ref} className="container-fluid">
             <div className="container">
             <h1><Link className="navbar-brand" to="/">De<span>Fi</span></Link></h1>
             <div className="row">

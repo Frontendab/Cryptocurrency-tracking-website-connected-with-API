@@ -1,16 +1,18 @@
-import React, { createContext, useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { TfiMenu } from 'react-icons/tfi';
 import { IoCloseSharp } from 'react-icons/io5';
+import { ProviderContext } from "../../App";
 
-export const PROVIDER = createContext(); 
 
 export const NavBar = () => {
+  const {handleClick} = useContext(ProviderContext); 
   const [current, setCurrent] = useState(false);
 
   const handleBtnMenu = () => {
     setCurrent(!current);
   }
+
   return (
         <>
         <nav className="navbar navbar-expand-lg navbar-light">
@@ -28,7 +30,7 @@ export const NavBar = () => {
           <Link className="nav-link" to="/earn">Earn</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#footer">Contact</a>
+          <a className="nav-link" onClick={handleClick}>Contact</a>
         </li>
           </ul>
         </div>
