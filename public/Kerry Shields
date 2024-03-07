@@ -81,7 +81,7 @@ nav .container .btn {
 }
 @media (max-width:767px) {
   .HOME {
-    height: 100vh;
+    height: 120vh;
   }
 }
 @media (min-width:768px) {
@@ -196,7 +196,7 @@ nav .container .btn {
 }
 @media (max-width:767px) {
   .crypto {
-    height: 160vh;
+    height: 178vh;
   }
 }
 @media (min-width:992px) {
