@@ -2,7 +2,7 @@
 .HOME{ 
     position: relative;
     @media #{$MAX_SM} {
-        height: 100vh;
+        height: 120vh;
         }
         @media #{$MIN_SM} {
             height: 135vh;
